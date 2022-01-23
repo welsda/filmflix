@@ -1,0 +1,6 @@
+<section *ngIf="images$ | async as images">
+  <h1 class="not-found">404</h1>
+  <h3 class="align">Página não encontrada <img class="img" src={{images[0].img}}></h3>
+  <a routerLink="/" mat-raised-button color="primary" class="align">Go Home <img class="img" src={{images[2].img}}></a>
+</section>
+

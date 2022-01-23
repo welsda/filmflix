@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
     const password = this.loginForm.value.password as string;
 
     this.authService.login(email, password).subscribe({
-      next: (creds) => {}, // TODO: Ir para home quando logar
+      next: (creds) => {}, // TODO: Verificar o bug do clique
       error: (err) => {
         let message = 'Ocorreu um erro';
         //code especifica o erro

@@ -1,0 +1,43 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid red;
+  max-width: 250px;
+  margin: 12% auto;
+  background-color: black;
+
+  height: 30%;
+
+  .not-found {
+    margin-top: 22px;
+    color: red;
+    font-weight: 700;
+    font-size: 96px;
+    margin-bottom: 32px;
+    animation: not-found-animation 2s infinite;
+  }
+}
+
+@keyframes not-found-animation {
+  from {
+    transform: rotateX(0deg) rotateX(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg) rotateX(10deg);
+  }
+}
+
+.img {
+  max-width: 25px;
+  margin-left: 7px;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

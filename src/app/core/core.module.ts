@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { MaterialModule } from '../shared/material/material.module';
 import { RouterModule } from '@angular/router';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule,
